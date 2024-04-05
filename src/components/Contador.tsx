@@ -1,9 +1,9 @@
-import { Component, useState } from 'react'
-import './App.tsx'
-import './App.css'
+import  {useState} from 'react'
+import '../App.tsx'
 
-function Contador({Component}) {
-    const div = document.querySelector(Component);
+
+export const Contador = () => {
+    
   // Declaración del estado del contador con un valor inicial de 0
   const [count, setCount] = useState(0);
 
