@@ -3,11 +3,11 @@ import './App.css'
 import Contador from './components/Contador.tsx'
 import Card from './components/Card.tsx'
 
-<h1>Primera Actividad</h1>
+
 
 const data = [
   {
-    imagen: "imagen1.jpg",
+    imagen: <img src='./resources/img1'></img>,
     titulo: "Título 1",
     texto: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     boton: "Ver más"
@@ -46,17 +46,20 @@ const data = [
 ];
 
 function App() {
+  
   return (
+    <>
+    <h1>PRIMERA ACTIVIDAD</h1>
     <div className="container">
       <div className="row">
         {data.map((item) => (
           <Card key={item.titulo} data={item} />
         ))}
       </div>
-      <Contador/>
+      <Contador />
     </div>
+    </>
   );
-};
-
+}
 
 export default App;

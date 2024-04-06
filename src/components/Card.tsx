@@ -2,11 +2,11 @@ import  {useState} from 'react'
 import '../App.tsx'
 import './Contador.tsx'
 
-function Card({ data }) {
+function Card({data}) {
   const { imagen, titulo, texto, boton } = data;
   const [count] = useState(0);
   return (
-    <div className="col-md-2">
+    <div className="grid-container">
       <img src={imagen} alt={titulo} />
       <h3>{titulo}</h3>
       <p>{texto}</p>
