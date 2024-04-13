@@ -23,12 +23,16 @@ export const Contador = () => {
   };
 
   return (
-    <div>
+    <div className='App'>
+      <div className='container d-flex justify-content-center align-items-center  h-100 '>
       <h1>Contador</h1>
+      
+      <button className='btn btn-outline-secondary rounded-0' onClick={handleIncrementar}>Incrementar</button>
+      <button className='btn btn-outline-secondary rounded-0' onClick={handleDecrementar}>Decrementar</button>
+      <button className='btn btn-outline-secondary rounded-0' onClick={handleReset}>Reiniciar</button>
       <p>Valor actual: {count}</p>
-      <button onClick={handleIncrementar}>Incrementar</button>
-      <button onClick={handleDecrementar}>Decrementar</button>
-      <button onClick={handleReset}>Reiniciar</button>
+      </div>
+      
     </div>
   );
 };
